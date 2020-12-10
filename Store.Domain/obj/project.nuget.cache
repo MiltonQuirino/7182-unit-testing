@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Vr32F7GcURYCDT/r5TS/UsmqJrILPiGs453qm8sQ7ZB6Tqnjghi6Be28Ue4/4zMpUKB9MXTPtAa+xo4AC8T9tQ==",
+  "dgSpecHash": "HNDVcUJj6V4l8oFC0UM93EyTFJIMRkrk7gVkaL7p2yN6M/ZLFtZaiCkrmCbvCMhEzmcLkj2tJypYcJmE37HDew==",
   "success": true,
   "projectFilePath": "/Users/miltonquirino/git/balta/store/Store.Domain/Store.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/miltonquirino/.nuget/packages/flunt/1.0.5/flunt.1.0.5.nupkg.sha512"
+  ],
   "logs": []
 }
