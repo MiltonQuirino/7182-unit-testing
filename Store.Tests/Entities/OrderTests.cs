@@ -48,6 +48,24 @@ namespace Store.Tests.Domain
             Assert.AreEqual(EOrderStatus.Canceled, order.Status);
         }
 
+        [TestMethod]
+        [TestCategory("Domain")]
+        public void Dado_um_novo_item_sem_produto_o_mesmo_nao_deve_ser_adicionado()
+        {
+            var order = new Order(_customer, 0, null);
+            order.AddItem(null, 1);
+            Assert.AreEqual(order.Items.Count, 0);
+        }
+
+        [TestMethod]
+        [TestCategory("Domain")]
+        public void Dado_um_novo_item_com_quantidade_zero_ou_menor_o_mesmo_nao_deve_ser_adicionado()
+        {
+            var order = new Order(_customer, 0, null);
+            order.AddItem(_product, 0);
+            order.AddItem(_product, -10);
+            Assert.AreEqual(order.Items.Count, 0);
+        }
 
 
 
